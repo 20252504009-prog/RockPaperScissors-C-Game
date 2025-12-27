@@ -64,7 +64,8 @@ int main()
         }
          // Display menu and take user input
         printf("\n Enter p for paper\n Enter s for scissor\nEnter r for rock");
-        scanf("\n%c",&you);
+        scanf(" %c",&you);
+        // Call the result function to decide winner
          checkresult= result(you,computer);
         printf("\nYOUR INPUT=%c\t and COMPUTER INPUT=%c\n",you,computer);
         // Compare user choice with computer choice to decide the result
